@@ -23,12 +23,14 @@ Título da página:: Lista de Contatos
 // Ultimos Ajustes
 → Adição do Bootstrap
    - terminar ajustes de layout
+   - escolher paleta de cores
+   - centralizar formulario
+   - 
 
-→ Falta terminar a logica que exlui uma conta.
-   - as decisões que tomei em relação a isso são:
-      → adicionar um checkbox
-      → apenas um botão de excluir
-      → o checkbox selecionado é a linha que sera excluida qnd se clicar no botão
+→ Falta terminar a logica que edita um contato.
+      → usar o checkbox selecionado como referencia
+      → criar função gatilho botão
+      → criar função edição
 
 → Adicionar icone de contato na aba de guia
 → escolher fonte

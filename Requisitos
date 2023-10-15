@@ -1,0 +1,34 @@
+Título da página:: Lista de Contatos
+
+1. Três campos de entrada: Nome, e-mail e telefone
+
+2. 1 botão de cadastro, para adicionar os dados na tabela
+
+2. 1 Tabela com 4 colunas inicialmente vazia, sem linhas, 
+   mas com os títulos das colunas na linha de cabeçalho
+
+3. Ao clicar no botão de cadastro
+   3.1. a página cria uma nova linha na tabela com os dados dos campos 
+      de entrada e um botão excluir.
+   3.2. limpa os campos de entrada
+
+4. quando clicar no botão excluir de uma linha, a
+   penas aquela linha é excluída da tabela.
+   
+5. Não é necessário o uso de CSS ou Bootstrap, 
+   mas pode ser legal colocar como forma de exercício.
+
+
+
+// Ultimos Ajustes
+→ Adição do Bootstrap
+   - terminar ajustes de layout
+
+→ Falta terminar a logica que exlui uma conta.
+   - as decisões que tomei em relação a isso são:
+      → adicionar um checkbox
+      → apenas um botão de excluir
+      → o checkbox selecionado é a linha que sera excluida qnd se clicar no botão
+
+→ Adicionar icone de contato na aba de guia
+→ escolher fonte

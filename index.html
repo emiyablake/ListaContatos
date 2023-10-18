@@ -6,7 +6,6 @@
     <title>Lista de contatos</title>
 
     <!--CSS-->
-    <!--<link rel="stylesheet" href="style.css">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
     <!--Script-->
@@ -20,26 +19,29 @@
             </div>
     
             <div class="card-body">
+
                 <div class="input-group">
-                    <form id="criarContato">
-                        <label for="nome">Nome:</label><br>
-                        <input type="text" id="nome"><br>
-                        <label for="email">E-mail:</label><br>
-                        <input type="text" id="email"><br>
-                        <label for="tel">Telefone:</label><br>
-                        <input type="text" id="tel"><br>
+                    <form id="criarContato" >
+                        <label for="nome" style="float: left;">Nome:</label><br>
+                        <input type="text" id="nome" style="width: 500px;"><br>
+                        <label for="email" style="margin-top: 10px; float: left;" >E-mail:</label><br>
+                        <input type="text" id="email" style="width: 500px;"><br>
+                        <label for="tel" style="margin-top: 10px; float: left;">Telefone:</label><br>
+                        <input type="text" id="tel" style="width: 500px;"><br>
                     </form>
-    
-                    
                 </div>
-                <button type="button" class="btn btn-secondary" onclick="adicionarContato()">Adicionar</button>
-                <button type="button" class="btn btn-secondary" onclick="editarContato()">Editar</button>
-                <button type="button" class="btn btn-secondary" onclick="excluirContato()">Excluir</button>
+
+                <button type="button" class="btn btn-primary" 
+                style="margin-top: 10px; float: left;" onclick="adicionarContato()">Adicionar</button>
+
+                <button type="button" class="btn btn-danger" 
+                style="margin: 10px; float: right;" onclick="excluirContato()">Excluir</button>
+
             </div>
         </div>
     
     </div>
-    <div class="container text-center">
+    <div class="container text-center" style="margin-top: 25px;">
         <div class="card">
             <table class="table">
                 <thead>
@@ -106,26 +108,6 @@
                             tabela.deleteRow(i);
                         }
                     }
-                }
-            }
-
-            //Função Editar contato
-            function editarContato() {
-            var checkboxes = document.querySelectorAll("input[type='checkbox']");
-            var checkboxSelecionado = null;
-
-                // Verifique qual checkbox está selecionado
-                for (var i = 0; i < checkboxes.length; i++) {
-                    if (checkboxes[i].checked) {
-                        checkboxSelecionado = checkboxes[i];
-                        break; // Pare o loop assim que encontrar o primeiro checkbox selecionado
-                    }
-                }
-
-                if (checkboxSelecionado) {
-                    editarContato(checkboxSelecionado);
-                } else {
-                    alert("Selecione um contato para editar.");
                 }
             }
 
